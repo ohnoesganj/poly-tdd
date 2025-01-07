@@ -9,7 +9,6 @@ public class Calculator {
     private int evaluate(String str, int start, int end) {
         if (start > end) return 0;
 
-        // 음수 부호 처리
         if (str.charAt(start) == '-') {
             if (start + 1 <= end && str.charAt(start + 1) == '(') {
                 int closing = findClosingParenthesis(str, start + 1);
